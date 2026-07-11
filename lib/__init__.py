@@ -1,1 +1,0 @@
-# AntennaOpt - shared library package
