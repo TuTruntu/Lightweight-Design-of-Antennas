@@ -7,12 +7,6 @@ __pycache__/
 .idea/
 .vscode/
 
-# Claude
-.claude/
-
-# Output (generated results)
-output/
-
 # Data (2.3 GB — too large for GitHub; manage separately)
 data/
 
