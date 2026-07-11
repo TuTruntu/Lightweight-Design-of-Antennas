@@ -59,7 +59,7 @@ print(f'  Ports: {port_num},  Freq points: {n_freqs}')
 print(f'  Frequency range: {freq[0]/1e9:.2f} – {freq[-1]/1e9:.2f} GHz')
 
 # Reference S11 from MED.s1p
-ref_s11 = load_threshold_from_s1p(med_s1p_path, freq)-1.75
+ref_s11 = load_threshold_from_s1p(med_s1p_path, freq)
 
 # ===========================================================================
 # 3. Compute optimised S11
@@ -88,7 +88,7 @@ for i in range(n_freqs):
 
     S11_opt[i] = (Z11 - 50.0) / (Z11 + 50.0)
 
-S11_opt_dB = 20 * np.log10(np.abs(S11_opt) + 1e-12)-2.25
+S11_opt_dB = 20 * np.log10(np.abs(S11_opt) + 1e-12)
 
 # ===========================================================================
 # 4. S-Parameter Comparison Plot
